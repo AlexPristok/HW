@@ -1,0 +1,16 @@
+.link {
+    color: teal;
+  }
+.link:visited {
+    color: blue;
+  }
+.link:hover{
+    color: green;
+    }
+.link:focus {
+    color: teal;
+}
+.link:active {
+    color: red;
+  }
+  
