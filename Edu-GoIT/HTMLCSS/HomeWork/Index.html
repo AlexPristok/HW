@@ -5,59 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="/Edu-GoIT/HTMLCSS/HomeWork 1/Css/style.css">
+    <link rel="stylesheet" href="/Edu-GoIT/HTMLCSS/HomeWork/Css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 </head>
-<body>
+<body class="body">
     <!-- Шапка -->
     <header>
         <!-- Навігація -->
-        <nav>
-            <!-- Назва -->
-            <a href="Index.html">
-                <h3>
-                    <span lang="en">WebStudio</span>
-                </h3>
-            </a>
+        <nav class="nav">
+              <!-- Назва -->
+            <div class="logo">
+                <a href="Index.html"  class="link">
+                    <h3 lang="en" class="first-color title">
+                        Web<span class="second-color">Studio</span>
+                    </h3>
+                </a>
+            </div>
             <!-- Сторінки -->
-            <ul>
+            <ul class="pages">
                 <li>
-                    <a href="">Студія</a>
+                    <a href="" class="link ">Студія</a>
                 </li>
                 <li>
-                    <a href="">Портфоліо</a>
+                    <a href="/Edu-GoIT/HTMLCSS/HomeWork/portfolio.html" class="link">Портфоліо</a>
                 </li>
                 <li>
-                    <a href="">Контакти</a>
+                    <a href="" class="link">Контакти</a>
                 </li>
             </ul>
             <!-- Авторизація -->
-            <ul>
-                <li>
-                    <a href="mailto:zaplishnyy2007@gmail.com" target="_blank">zaplishnyy2007@gmail.com</a>
-                </li>
-                <li>
-                    <a href="tel:+380960313185" target="_blank">+380960313185</a>
-                </li>
-            </ul>
+            <address class="address">
+                <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">zaplishnyy2007@gmail.com</a>
+                <a href="tel:+380960313185" target="_blank" class="link">+380960313185</a>
+            </address>
+
     
         </nav>
     </header>
     <!-- Мейн -->
     <main>
         <!-- Баннер -->
-            <h1>
+        <div class="banner">
+            <h1 class="banner-title">
                 ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ
             </h1>
-            <a href="">
-                <button type="button">
-                    Приєднатися зараз
-                </button>
+            <a href="" class="button primary link">
+                <span class="title">Замовити послугу</span> 
             </a>
+        </div>
         <!-- Чому ми -->
-        <section>
+        <section class="section why-us">
             <ul>
                 <!-- УВАГА ДО ДЕТАЛЕЙ -->
-                <h2> Чому ми </h2>
+                <!-- <h2> Чому ми </h2> -->
                 <li>
                     <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p>
@@ -88,7 +88,7 @@
             </ul>
         </section>
         <!-- Чим ми займаємося -->
-        <section>
+        <section class="section our-job">
             <h2>Чим ми займаємося</h2>
             <ul>
                 <li> 
@@ -103,7 +103,7 @@
             </ul>
         </section>
         <!-- Наша команда -->
-        <section>
+        <section class="section our-team">
             <h2>
                 Наша команда
             </h2>
@@ -112,39 +112,41 @@
                 <li>
                     <img src="/Edu-GoIT/HTMLCSS/Content/Images/img.jpg" alt="" width="270" height="260">
                     <h3>Ігор Дем'яненко</h3>
-                    <p>Product Designer</p>
+                    <p class="profession">Product Designer</p>
                 </li>
                 <!-- Ольга Рєпіна -->
                 <li>
                     <img src="/Edu-GoIT/HTMLCSS/Content/Images/img2.jpg" alt="" width="270" height="260">
                     <h3>Ольга Рєпіна</h3>
-                    <p>Frontend Developer</p>
+                    <p class="profession">Frontend Developer</p>
                 </li>
                 <!-- Микола Тарасов -->
                 <li>
                     <img src="/Edu-GoIT/HTMLCSS/Content/Images/img1.jpg" alt="" width="270" height="260">
                     <h3>Микола Тарасов</h3>
-                    <p>Marketing</p>
+                    <p class="profession">Marketing</p>
                 <!-- Михайло Єрмаков -->
                 <li>
                     <img src="/Edu-GoIT/HTMLCSS/Content/Images/img0.jpg" alt="" width="270" height="260">
                     <h3>Михайло Єрмаков</h3>
-                    <p>UI Designer</p>
+                    <p class="profession">UI Designer</p>
                 </li>
             </ul>
         </section>
     </main>
     <!-- Футер -->
-    <footer>
-        <a href="Index.html"> 
-            <h3>
-                <span lang="en">WebStudio</span>
-            </h3>
+    <footer class="footer">
+        <div class="logo">
+            <a href="Index.html"  class="link">
+                <h3 lang="en" class="first-color title">
+                    Web<span class="second-color">Studio</span>
+                </h3>
+        </div>
         </a>
-        <address>
-            <a href="https://goo.gl/maps/iCPqnDF2C4gekVqJ9">Київ, Героїв Дніпра 49 <br></a>
-            <a href="mailto:zaplishnyy2007@gmail.com" target="_blank">zaplishnyy2007@gmail.com <br></a>
-            <a href="tel:+380960313185" target="_blank">+380960313185</a>
+        <address class="address">
+            <a href="https://goo.gl/maps/iCPqnDF2C4gekVqJ9" class="link street">Київ, Героїв Дніпра 49 <br></a>
+            <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">zaplishnyy2007@gmail.com <br></a>
+            <a href="tel:+380960313185" target="_blank" class="link">+380960313185</a>
         </address>
     </footer>
 </body>

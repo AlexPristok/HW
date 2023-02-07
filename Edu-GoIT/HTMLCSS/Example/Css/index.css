@@ -1,0 +1,33 @@
+/* Primary text color #000000 */
+
+/* Secondary color rgba(0,0,0,0.8) */
+
+/* Wrapper White #ffffff */
+
+/* Actionable item #18A0FB */
+
+/* Secondary body color #F5F5F5*/
+
+.list{
+    list-style: none;
+}
+/* Section */
+.section-title{
+    color: var(--title-text-color);
+}
+/* Learn More */
+.link-lm{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+.link-lm:hover{
+    color: var(--title-text-color);     
+}
+/* Hero */
+.hero-title{
+    color: var(--title-text-color);
+}
+/* Wiki */
+.wiki-list .wiki-title{
+    color: var(--title-text-color);
+}
