@@ -1,0 +1,111 @@
+/* hero */
+.hero {
+  background-color: var(--quaternary-bg-color);
+  text-align: center;
+  margin-bottom: 94px;
+  padding-bottom: 200px;
+  padding-top: 180px;
+}
+.hero-title {
+  color: var(---text-color);
+  color: var(--tertiary-text-color);
+}
+.hero .size{
+  width: 693px;
+}
+/* Button */
+.hero .button {
+  background: var(--accent-color);
+  color: var(--tertiary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  margin-top: 40px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  
+}
+.hero .button.link {
+  display: inline-block;
+}
+/* sections */
+
+/* why us */
+.why-us {
+  margin-bottom: 94px;
+}
+.why-us .list {
+  display: flex;
+}
+.why-us .item {
+  width: 270px;
+}
+.why-us .item + .item {
+  margin-left: 29px;
+}
+
+/* our-job */
+.our-job {
+  margin-bottom: 94px;
+}
+.our-job .title {
+  margin-bottom: 50px;
+}
+.our-job .list {
+  display: flex;
+}
+.our-job .item + .item {
+  margin-left: 30px;
+}
+
+/* our-team */
+.section.our-team {
+  background-color: var(--tertiary-bg-color);
+}
+.section.our-team .profession {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+.our-team .title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.our-team .list {
+  display: flex;
+}
+.our-team .item {
+  margin-bottom: 94px;
+}
+.our-team .item + .item {
+  margin-left: 30px;
+}
+
+/* our-clients */
+.our-clients{
+  padding-bottom: 94px;
+}
+.our-clients .title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.our-clients .list{
+  display: flex
+}
+.our-clients .item{
+  margin-right: 30px;
+}
+.our-clients .item:last-child{
+  margin-right: 0;
+}

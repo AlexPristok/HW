@@ -1,3 +1,4 @@
+/* footer */
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -9,7 +10,14 @@
   --tertiary-bg-color: #f5f4fa;
   --quaternary-bg-color: #2f303a;
 }
-
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
 h1,
 h2,
 h3,
@@ -17,6 +25,7 @@ h4,
 h5,
 h6 {
   color: var(--primary-text-color);
+  margin: 0;
 }
 h1 {
   font-family: "Roboto";
@@ -51,16 +60,17 @@ h3 {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-
   line-height: 24px;
   letter-spacing: 0.03em;
-
+  margin: 0;
   color: var(--secondary-text-color);
 }
 .link {
@@ -69,19 +79,37 @@ p {
 .body {
   background: var(--primary-bg-color);
 }
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px ;
+}
+
+/* nav */
+.nav{
+  display: flex;
+  align-items: center;
+}
+.nav .title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.nav .list{
+  display: flex;
+}
+.nav .item:not(:last-child){
+  margin-right: 50px; 
+}
 .nav .link.current {
   color: var(--accent-color);
 }
-/* logo */
 
-/* nav */
-.nav .address .link {
-  color: var(--secondary-text-color);
-}
-.nav .address .link:hover,
-.nav .address .link:focus {
-  color: var(--accent-color);
-}
+/* pages */
 .pages .link:hover,
 .pages .link:focus {
   color: var(--accent-color);
@@ -94,87 +122,77 @@ p {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
 }
-.logo .first-color {
+
+/* address */
+
+.nav .address .link {
+  color: var(--secondary-text-color);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+}
+.nav .address .link:hover,
+.nav .address .link:focus {
   color: var(--accent-color);
 }
-.logo .second-color {
+.nav .address{
+  margin-left: auto;
+}
+
+/* logo */
+.nav .logo{
+  margin-right: 92px;
+}
+.nav .logo a{
+  display: block;
+}
+.nav .logo .first-color {
+  color: var(--accent-color);
+}
+.nav .logo .second-color {
   color: var(--quaternary-text-color);
 }
-.nav .title {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-}
 
-/* ___Main___ */
-
-/* Banner */
-.banner {
-  background-color: var(--quaternary-bg-color);
-  text-align: center;
-}
-
-.banner-title {
-  color: var(--tertiary-text-color);
-}
-
-/* Button */
-.button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  display: inline-block;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-  border: 1px solid black;
-  color: var(--tertiary-text-color);
-  background-color: var(--accent-color);
-  border-color: transparent;
-}
-/* sections */
-.section.our-team {
-  background-color: var(--tertiary-bg-color);
-}
-.section.our-team .profession {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-text-color);
-}
 
 /* footer */
 .footer {
   background-color: var(--quaternary-bg-color);
 }
+.footer .logo .first-color {
+  color: var(--accent-color);}
 .footer .address .link {
   color: var(--secondary-text-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
-
 .footer .address .link.street {
   color: var(--tertiary-text-color);
 }
-
 .footer .logo .second-color {
   color: var(--tertiary-text-color);
 }
-
 .footer .address .link:hover,
 .footer .address .link:focus,
 .footer .address .link.street:focus,
 .footer .address .link.street:hover {
   color: var(--accent-color);
 }
-.footer .title {
+.footer .logo .title {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -182,4 +200,16 @@ p {
   line-height: 31px;
   letter-spacing: 0.03em;
 }
-/* PORTFOLIO */
+.footer .social .title{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  color: var(--tertiary-text-color);
+}
+.footer .social .list{
+  display: flex;
+}
