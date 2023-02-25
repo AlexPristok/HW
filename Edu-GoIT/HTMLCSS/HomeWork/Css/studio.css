@@ -1,16 +1,39 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --tertiary-text-color: #ffffff;
+  --quaternary-text-color: #000000;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f5f5;
+  --tertiary-bg-color: #f5f4fa;
+  --quaternary-bg-color: #2f303a;
+  --quinary-bg-color: #AFB1B8;
+}
 /* hero */
 .hero {
   background-color: var(--quaternary-bg-color);
+  display: block;
   text-align: center;
   margin-bottom: 94px;
   padding-bottom: 200px;
   padding-top: 180px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../Content/Images/hero1.jpg);
+  background-position: center;
 }
 .hero-title {
   color: var(---text-color);
   color: var(--tertiary-text-color);
 }
-.hero .size{
+.hero .size {
   width: 693px;
 }
 /* Button */
@@ -23,12 +46,15 @@
 
   margin-top: 40px;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: #1d81d3;
 }
 .hero .button.link {
   display: inline-block;
@@ -39,6 +65,21 @@
 .why-us {
   margin-bottom: 94px;
 }
+.why-us .bg {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.why-us .bg .icon {
+  display: flex;
+  width: 65px;
+  height: 70px;
+}
 .why-us .list {
   display: flex;
 }
@@ -48,7 +89,8 @@
 .why-us .item + .item {
   margin-left: 29px;
 }
-
+.why-us .icon {
+}
 /* our-job */
 .our-job {
   margin-bottom: 94px;
@@ -66,6 +108,7 @@
 /* our-team */
 .section.our-team {
   background-color: var(--tertiary-bg-color);
+  padding-top: 94px;
 }
 .section.our-team .profession {
   font-style: normal;
@@ -78,34 +121,114 @@
   color: var(--secondary-text-color);
 }
 .our-team .title {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .our-team .list {
   display: flex;
 }
-.our-team .item {
-  margin-bottom: 94px;
+.our-team .social {
+  margin-left: 32px;
+  padding-bottom: 30px;
+}
+.our-team .item{
+  fill: var(--quinary-bg-color);
+}
+.our-team .item{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+}
+.our-team .item:hover,
+.our-team .item:focus{
+  background-color: var(--accent-color)
+  
 }
 .our-team .item + .item {
+  margin-left: 10px;
+}
+.our-team .icon{
+  width: 20px;
+  height: 20px;
+}
+.our-team .icon:hover,
+.our-team .icon:focus{
+}
+.our-team .card  {
+  margin-bottom: 94px;
+}
+.our-team .card + .card {
   margin-left: 30px;
 }
+.our-team .card {
+  display: block;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team .name {
+  margin-bottom: 10px;
+}
+.our-team .profession {
+  margin-bottom: 16px;
+}
+.our-team .under {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.our-team .link{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: var(--secondary-text-color);
+}
+.our-team .link:hover,
+.our-team .link:focus{
+  background-color: var(--accent-color);
+  fill: var(--tertiary-bg-color);
+}
 /* our-clients */
-.our-clients{
+.our-clients {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .our-clients .title {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
-.our-clients .list{
-  display: flex
+.our-clients .list {
+  display: flex;
 }
-.our-clients .item{
+.our-clients .item {
   margin-right: 30px;
 }
-.our-clients .item:last-child{
+.our-clients .item:last-child {
   margin-right: 0;
+}
+.our-clients .icon {
+  width: 106px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.our-clients .link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--quinary-bg-color);
+  border-radius: 4px;
+  fill: var(--secondary-text-color);
+}
+.our-clients .link:hover,
+.our-clients .link:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }

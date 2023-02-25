@@ -7,16 +7,16 @@
     <title>WebStudio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="/Edu-GoIT/HTMLCSS/HomeWork/Css/studio.css">
-    <link rel="stylesheet" href="/Edu-GoIT/HTMLCSS/HomeWork/Css/default.css">
+    <link rel="stylesheet" href="./Css/studio.css">
+    <link rel="stylesheet" href="./Css/default.css">
 </head>
 <body class="body">
     <!-- Шапка -->
     <header>
         <!-- Навігація -->
-        <nav class="nav container">
-                <!-- Назва -->
-              <div class="logo">
+        <nav class="nav">
+                <div class="container">
+                    <div class="logo">
                   <a href="index.html"  class="link">
                       <h3 lang="en" class="first-color title">
                           Web<span class="second-color">Studio</span>
@@ -30,7 +30,7 @@
                         <a href="" class="link current">Студія</a>
                     </li>
                     <li class="item">
-                        <a href="/Edu-GoIT/HTMLCSS/HomeWork/portfolio.html" class="link">Портфоліо</a>
+                        <a href="./portfolio.html" class="link">Портфоліо</a>
                     </li>
                     <li class="item">
                         <a href="" class="link">Контакти</a>
@@ -41,13 +41,26 @@
               <address class="address">
                   <ul class="list">
                       <li class="item">
-                          <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">zaplishnyy2007@gmail.com</a>
+                          <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">
+                            <svg class="icon mail">
+                                <use href="../Content/Images/symbol-defs.svg#mail"></use>
+                            </svg>
+                            zaplishnyy2007@gmail.com
+                          </a>
                       </li>
                       <li class="item">
-                          <a href="tel:+380960313185" target="_blank" class="link">+380960313185</a>
+                        <div class="icon">    
+                        </div>
+                          <a href="tel:+380960313185" target="_blank" class="link">
+                            <svg class="icon phone">
+                                <use href="../Content/Images/symbol-defs.svg#phone"></use>
+                            </svg>
+                            +380960313185
+                          </a>
                       </li>
                   </ul>
               </address>
+                </div>
         </nav>
     </header>
     <!-- Мейн -->
@@ -70,6 +83,11 @@
                     <!-- УВАГА ДО ДЕТАЛЕЙ -->
                     <!-- <h2> Чому ми </h2> -->
                     <li class="item">
+                        <div class="bg antenna">
+                        <svg class="icon ">
+                                <use href="../Content/Images/symbol-defs.svg#antenna"></use>
+                            </svg>                            
+                        </div>
                         <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p>
                             Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
@@ -77,6 +95,11 @@
                     </li>
                     <!-- ПУНКТУАЛЬНІСТЬ -->
                     <li class="item">
+                        <div class="bg clock">
+                        <svg class="icon ">
+                                <use href="../Content/Images/symbol-defs.svg#clock"></use>
+                            </svg>                            
+                        </div>
                         <h3>ПУНКТУАЛЬНІСТЬ</h3>
                         <p>
                             Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
@@ -84,6 +107,11 @@
                     </li>
                     <!-- ПЛАНУВАННЯ -->
                     <li class="item">
+                        <div class="bg diagram">
+                        <svg class="icon ">
+                                <use href="../Content/Images/symbol-defs.svg#diagram"></use>
+                            </svg>                            
+                        </div>                       
                         <h3>ПЛАНУВАННЯ</h3>
                         <p>
                             Так само консультація з широким активом значною мірою зумовлює.
@@ -91,6 +119,11 @@
                     </li>
                     <!-- СУЧАСНІ ТЕХНОЛОГІЇ -->
                     <li class="item">
+                        <div class="bg astronaut">
+                        <svg class="icon">
+                                <use href="../Content/Images/symbol-defs.svg#astronaut"></use>
+                            </svg>                            
+                        </div>                       
                         <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p>
                             Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -105,13 +138,13 @@
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="list">
                     <li class="item"> 
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/box1.png" alt="">
+                        <img src="../Content/Images/img.jpg" alt="">
                     </li>
                     <li class="item"> 
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/box2.png" alt="">
+                        <img src="../Content/Images/img2.jpg" alt="">
                     </li>
                     <li class="item"> 
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/img.png" alt="">
+                        <img src="../Content/Images/img3.jpg" alt="">
                     </li>
                 </ul>
             </div>
@@ -124,27 +157,163 @@
                 </h2>
                 <ul class="list">
                     <!-- Ігор Дем'яненко -->
-                    <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/img.jpg" alt="" width="270" height="260">
-                        <h3>Ігор Дем'яненко</h3>
-                        <p class="profession">Product Designer</p>
+                    <li class="card">
+                        <img src="../Content/Images/team1.jpg" alt="" width="270" height="260">
+                        <div class="under">
+                            <h3 class="name">Ігор Дем'яненко</h3>
+                            <p class="profession">Product Designer</p>
+                        </div>
+                        <div class="social">
+                            <ul class="list">
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon instagram">
+                                    <use href="../Content/Images/symbol-defs.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon twitter">
+                                    <use href="../Content/Images/symbol-defs.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon facebook">
+                                    <use href="../Content/Images/symbol-defs.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon in">
+                                    <use href="../Content/Images/symbol-defs.svg#in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        </div>          
                     </li>
                     <!-- Ольга Рєпіна -->
-                    <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/img2.jpg" alt="" width="270" height="260">
-                        <h3>Ольга Рєпіна</h3>
-                        <p class="profession">Frontend Developer</p>
+                    <li class="card">
+                        <img src="../Content/Images/team2.jpg" alt="" width="270" height="260">
+                        <div class="under">
+                            <h3 class="name">Ольга Рєпіна</h3>
+                            <p class="profession">Frontend Developer</p>
+                        </div>
+                                <div class="social">
+                            <ul class="list">
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon instagram">
+                                    <use href="../Content/Images/symbol-defs.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon twitter">
+                                    <use href="../Content/Images/symbol-defs.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon facebook">
+                                    <use href="../Content/Images/symbol-defs.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon in">
+                                    <use href="../Content/Images/symbol-defs.svg#in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                            </ul>
+                        </div>        
                     </li>
                     <!-- Микола Тарасов -->
-                    <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/img1.jpg" alt="" width="270" height="260">
-                        <h3>Микола Тарасов</h3>
-                        <p class="profession">Marketing</p>
+                    <li class="card">
+                        <img src="../Content/Images/team3.jpg" alt="" width="270" height="260">
+                        <div class="under">
+                            <h3 class="name">Микола Тарасов</h3>
+                            <p class="profession">Marketing</p>
+                        </div>
+                        <div class="social">
+                            <ul class="list">
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon instagram">
+                                    <use href="../Content/Images/symbol-defs.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon twitter">
+                                    <use href="../Content/Images/symbol-defs.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon facebook">
+                                    <use href="../Content/Images/symbol-defs.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon in">
+                                    <use href="../Content/Images/symbol-defs.svg#in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                            </ul>
+                        </div>    
+                    </li>
                     <!-- Михайло Єрмаков -->
-                    <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/img0.jpg" alt="" width="270" height="260">
-                        <h3>Михайло Єрмаков</h3>
-                        <p class="profession">UI Designer</p>
+                    <li class="card">
+                        <img src="../Content/Images/team4.jpg" alt="" width="270" height="260">
+                        <div class="under">
+                            <h3 class="name">Михайло Єрмаков</h3>
+                            <p class="profession">UI Designer</p>
+                        </div>
+                        <div class="social">
+                            <ul class="list">
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon instagram">
+                                    <use href="../Content/Images/symbol-defs.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon twitter">
+                                    <use href="../Content/Images/symbol-defs.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon facebook">
+                                    <use href="../Content/Images/symbol-defs.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon in">
+                                    <use href="../Content/Images/symbol-defs.svg#in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                            </ul>
+                        </div>    
                     </li>
                 </ul>
             </div>
@@ -155,22 +324,42 @@
                 <h2 class="title">Постійні кліенти</h2>
                 <ul class="list">
                     <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/1.png" alt="">
+                        <a href="" class="link">
+                        <svg class="icon  logo1">
+                                <use href="../Content/Images/symbol-defs.svg#logo1"></use>
+                            </svg>                        </a>
                     </li>
                     <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/2.png" alt="">
+                        <a href="" class="link">
+                        <svg class="icon  logo2">
+                                <use href="../Content/Images/symbol-defs.svg#logo2"></use>
+                            </svg>                        </a>
                     </li>
                     <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/3.png" alt="">
+                        <a href="" class="link">
+                        <svg class="icon  logo3">
+                                <use href="../Content/Images/symbol-defs.svg#logo3"></use>
+                            </svg>                        </a>
                     </li>
                     <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/4.png" alt="">
+                        <a href="" class="link">
+                        <svg class="icon  logo4">
+                                <use href="../Content/Images/symbol-defs.svg#logo4"></use>
+                            </svg>                        </a>
                     </li>
                     <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/5.png" alt="">
+                        <a href="" class="link">
+                        <svg class="icon  logo5">
+                                <use href="../Content/Images/symbol-defs.svg#logo5"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="item">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/6.png" alt="">
+                        <a href="" class="link">
+                        <svg class="icon  logo4">
+                                <use href="../Content/Images/symbol-defs.svg#logo6"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -179,7 +368,7 @@
     <!-- Футер -->
     <footer class="footer">
         <div class="container">
-                <address class="address">
+            <address class="address">
                     <div class="logo">
                         <a href="Index.html"  class="link">
                             <h3 lang="en" class="first-color title">
@@ -187,38 +376,53 @@
                             </h3>
                         </a>
                     </div>
-                    <div class="">
+                    <div class="info">
                         <ul class="list">
-                            <li class="item">
+                            <li class="link">
                                 <a href="https://goo.gl/maps/iCPqnDF2C4gekVqJ9" class="link street">Київ, Героїв Дніпра 49</a>
                             </li>
-                            <li class="item">
+                            <li class="link">
                                 <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">zaplishnyy2007@gmail.com</a>
                             </li>
-                            <li class="item">
+                            <li class="link">
                                 <a href="tel:+380960313185" target="_blank" class="link">+380960313185</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="social">
-                        <p class="title">приєднуйтесь</p>
-                        <ul class="list">
-                            <li class="item">
-                                <img src="/Edu-GoIT/HTMLCSS/Content/Images/11.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img src="/Edu-GoIT/HTMLCSS/Content/Images/22.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img src="/Edu-GoIT/HTMLCSS/Content/Images/33.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img src="/Edu-GoIT/HTMLCSS/Content/Images/44.png" alt="">
-                            </li>
-                            </li>
-                        </ul>
-                    </div>
-                </address>
+            </address>
+            <div class="social">
+                    <p class="title">приєднуйтесь</p>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon instagram">
+                                    <use href="../Content/Images/symbol-defs.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon twitter">
+                                    <use href="../Content/Images/symbol-defs.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon facebook">
+                                    <use href="../Content/Images/symbol-defs.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon in">
+                                    <use href="../Content/Images/symbol-defs.svg#in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
         </div>
     </footer>
 </body>

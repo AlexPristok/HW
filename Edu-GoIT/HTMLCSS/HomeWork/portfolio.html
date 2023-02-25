@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="/Edu-GoIT/HTMLCSS/HomeWork/Css/default.css">
-    <link rel="stylesheet" href="/Edu-GoIT/HTMLCSS/HomeWork/Css/portfolio.css">
+    <link rel="stylesheet" href="./Css/default.css">
+    <link rel="stylesheet" href="./Css/portfolio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 </head>
 <body class="body">
     <!-- Шапка -->
     <header>
         <!-- Навігація -->
-        <nav class="nav container">
-                <!-- Назва -->
-              <div class="logo">
+        <nav class="nav">
+                <div class="container">
+                    <div class="logo">
                   <a href="index.html"  class="link">
                       <h3 lang="en" class="first-color title">
                           Web<span class="second-color">Studio</span>
@@ -27,10 +27,10 @@
               <div class="pages">
                 <ul class="list">
                     <li class="item">
-                        <a href="" class="link ">Студія</a>
+                        <a href="" class="link current">Студія</a>
                     </li>
                     <li class="item">
-                        <a href="/Edu-GoIT/HTMLCSS/HomeWork/portfolio.html" class="link current">Портфоліо</a>
+                        <a href="./portfolio.html" class="link">Портфоліо</a>
                     </li>
                     <li class="item">
                         <a href="" class="link">Контакти</a>
@@ -41,13 +41,26 @@
               <address class="address">
                   <ul class="list">
                       <li class="item">
-                          <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">zaplishnyy2007@gmail.com</a>
+                          <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">
+                            <svg class="icon mail">
+                                <use href="../Content/Images/symbol-defs.svg#mail"></use>
+                            </svg>
+                            zaplishnyy2007@gmail.com    
+                          </a>
                       </li>
                       <li class="item">
-                          <a href="tel:+380960313185" target="_blank" class="link">+380960313185</a>
+                        <div class="icon">    
+                        </div>
+                          <a href="tel:+380960313185" target="_blank" class="link">
+                            <svg class="icon phone">
+                                <use href="../Content/Images/symbol-defs.svg#phone"></use>
+                            </svg>
+                            +380960313185
+                          </a>
                       </li>
                   </ul>
               </address>
+                </div>
         </nav>
     </header>
     <!-- Мейн -->
@@ -68,101 +81,128 @@
                 <ul class="list">
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/1i.png" alt="">
-                        <h3>
+                        <img src="../Content/Images/port1.jpg" alt="">
+                        <div class="under">
+                            <h3>
                             Технокряк
                         </h3>
                         <p>
                             Веб-сайт
                         </p>
+                        </div>
+                        
                     </a>
                     </li>
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/2i.png" alt="">
-                        <h3>
+                        <img src="../Content/Images/port2.jpg" alt="">
+                        <div class="under">
+                            <h3>
                             Постер New Orlean vs Golden Star
                         </h3>
                         <p>
                             Дизайн
                         </p>
+                        </div>
+                        
                     </a>
                     </li>
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/3i.png" alt="">
-                        <h3>
+                        <img src="../Content/Images/port3.jpg" alt="">
+                        <div class="under">
+                            <h3>
                             Ресторан Seafood
                         </h3>
                         <p>
                             Додаток
                         </p>
+                        </div>
+                        
                     </a>
                     </li>
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/4i.png" alt="">
+                        <img src="../Content/Images/port4.jpg" alt="">
+                        <div class="under">
                         <h3>
                             Проєкт Prime
                         </h3>
                         <p>
                             Маркетинг
                         </p>
+                        </div>
+                        
                     </a>
                     </li>
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/5i.png" alt="">
+                        <img src="../Content/Images/port5.jpg" alt="">
+                        <div class="under">
                         <h3>
                             Проєкт Boxes
                         </h3>
                         <p>
                             Додаток
                         </p>    
+                        </div>
+                        
                     </a>
                     </li>
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/6i.png" alt="">
+                        <img src="../Content/Images/port6.jpg" alt="">
+                        <div class="under">
                         <h3>
                             Inspiration has no Borders
                         </h3>
                         <p>
                             Веб-сайт
                         </p>
+                        </div>
+                        
                         </a>
                     </li>
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/7i.png" alt="">
-                        <h3>
+                        <img src="../Content/Images/port7.jpg" alt="">
+                        <div class="under">
+                            <h3>
                             Видання Limited Edition
                         </h3>
                         <p>
                             Дизайн
                         </p>
+                        </div>
+                        
                         </a>
                     </li>
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/9i.png" alt="">
-                        <h3>
+                        <img src="../Content/Images/port8.jpg" alt="">
+                        <div class="under">
+                            <h3>
                             Проєкт LAB
                         </h3>
                         <p>
                             Маркетинг
                         </p>
+                        </div>
+                        
                         </a>
                     </li>
                     <li class="item">
                         <a href="" class="link">
-                        <img src="/Edu-GoIT/HTMLCSS/Content/Images/8i.png" alt="">
-                        <h3>
+                        <img src="../Content/Images/port9.jpg" alt="">
+                        <div class="under">
+                            <h3>
                             Growing Business
                         </h3>
                         <p>
                             Додаток
                         </p>
+                        </div>
+                        
                         </a>
                     </li>
                 </ul>
@@ -172,26 +212,61 @@
     <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <div class="logo">
-                <a href="Index.html"  class="link">
-                    <h3 lang="en" class="first-color title">
-                        Web<span class="second-color">Studio</span>
-                    </h3>
-            </div>
-            </a>
             <address class="address">
-                <ul class="list">
-                    <li class="item">
-                        <a href="https://goo.gl/maps/iCPqnDF2C4gekVqJ9" class="link street">Київ, Героїв Дніпра 49</a>
-                    </li>
-                    <li class="item">
-                        <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">zaplishnyy2007@gmail.com</a>
-                    </li>
-                    <li class="item">
-                        <a href="tel:+380960313185" target="_blank" class="link">+380960313185</a>
-                    </li>
-                </ul>
+                    <div class="logo">
+                        <a href="Index.html"  class="link">
+                            <h3 lang="en" class="first-color title">
+                                Web<span class="second-color">Studio</span>
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <ul class="list">
+                            <li class="link">
+                                <a href="https://goo.gl/maps/iCPqnDF2C4gekVqJ9" class="link street">Київ, Героїв Дніпра 49</a>
+                            </li>
+                            <li class="link">
+                                <a href="mailto:zaplishnyy2007@gmail.com" target="_blank" class="link">zaplishnyy2007@gmail.com</a>
+                            </li>
+                            <li class="link">
+                                <a href="tel:+380960313185" target="_blank" class="link">+380960313185</a>
+                            </li>
+                        </ul>
+                    </div>
             </address>
+            <div class="social">
+                    <p class="title">приєднуйтесь</p>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon instagram">
+                                    <use href="../Content/Images/symbol-defs.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon twitter">
+                                    <use href="../Content/Images/symbol-defs.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon facebook">
+                                    <use href="../Content/Images/symbol-defs.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link">
+                                <svg class="icon in">
+                                    <use href="../Content/Images/symbol-defs.svg#in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
         </div>
     </footer>
 </body>
